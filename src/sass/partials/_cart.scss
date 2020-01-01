@@ -1,6 +1,6 @@
 .cart {
   position: absolute;
-  width: 300px; 
+  width: 300px;
   right: 0;
   top: $base-size;
   padding: ($base-size) ($base-size * 1.5);
@@ -76,12 +76,8 @@
   &__product { // CODE CHANGED
     width: 170px; // CODE CHANGED
   }
-  //&__product-name {
-    //width: 150px;
-  //}
 
   // CODE ADDED START
-
   &__product-header {
     @include flex(row, center, space-between);
   }
