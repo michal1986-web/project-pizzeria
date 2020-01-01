@@ -248,6 +248,7 @@
             }
           }
           
+          
           /* START ELSE condition for removing images for deselected options */
           else {
             for (let image of images) {
