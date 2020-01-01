@@ -100,8 +100,6 @@
       thisProduct.initOrderForm();
 
       thisProduct.processOrder();
-
-      //console.log('new Product:', thisProduct);
     }
 
     renderInMenu(){
@@ -136,6 +134,8 @@
       thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
 
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
+
+      thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
     }
 
     initAccordion(){
@@ -236,14 +236,28 @@
             price = price - option.price;
             //console.log('price reduced:', option.price);
           }
-          /* END ELSE IF: if option is not selected and option is default */
+
+          /* create const to store matching elements */
+          const images = thisProduct.imageWrapper.querySelectorAll('.' + paramId + '-' + optionId);
+          //console.log('images: ', images);   
+          
+          if(optionSelected && !option.checked){
+  
+            for (let image of images) {
+              image.classList.add(classNames.menuProduct.imageVisible);
+            }
+          }
+          
+          /* START ELSE condition for removing images for deselected options */
+          else {
+            for (let image of images) {
+              image.classList.remove(classNames.menuProduct.imageVisible);
+            }
+          }
         }
-        /* END LOOP: for each optionId in param.options */
       }
       thisProduct.priceElem.innerHTML = price;
-      /* END LOOP: for each paramId in thisProduct.data.params */
     }
-
 
 
   }
