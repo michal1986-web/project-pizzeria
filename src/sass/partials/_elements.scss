@@ -30,8 +30,26 @@
 
 /* Form elements */
 
+input {
+  opacity: 0.8;
+
+  &:focus {
+    border: 2px solid $color-main;
+    box-shadow: inset 0px 0px 2px 2px $color-main;
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &::placeholder {
+    color: $color-dark;
+  }
+}
+
 input, select {
-  border: 1px solid $color-dark;
+  border: 2px solid $color-dark;
   border-radius: $radius;
   padding: $base-size;
 

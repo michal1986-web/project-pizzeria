@@ -204,116 +204,28 @@
   ],
   "order": [
     {
-      "address": "test",
-      "totalPrice": 29,
+      "address": "Witkwiecza 23/23 sosnowiec 23-200 ",
+      "phone": "696856985",
+      "totalNumber": 2,
+      "subtotalPrice": 18,
+      "totalPrice": 38,
+      "deliveryFee": 20,
+      "products": [
+        {
+          "productInfo": {
+            "id": "cake",
+            "amount": 2,
+            "price": 18,
+            "priceSingle": 9,
+            "params": {}
+          }
+        }
+      ],
       "id": 1
     },
     {
-      "address": "test",
-      "totalPrice": 56,
-      "id": 2
-    },
-    {
-      "address": "test",
-      "totalPrice": 48,
-      "id": 3
-    },
-    {
-      "address": "",
-      "phone": "",
-      "totalNumber": 2,
-      "subtotalPrice": 18,
-      "totalPrice": 38,
-      "deliveryFee": 20,
-      "products": [
-        {
-          "productInfo": {
-            "id": "cake",
-            "amount": 2,
-            "price": 18,
-            "priceSingle": 9,
-            "params": {}
-          }
-        }
-      ],
-      "id": 4
-    },
-    {
-      "address": "witkiewicza 26/34 sosnowiec 41-209",
-      "phone": "698659598",
-      "totalNumber": 2,
-      "subtotalPrice": 18,
-      "totalPrice": 38,
-      "deliveryFee": 20,
-      "products": [
-        {
-          "productInfo": {
-            "id": "cake",
-            "amount": 2,
-            "price": 18,
-            "priceSingle": 9,
-            "params": {}
-          }
-        }
-      ],
-      "id": 5
-    },
-    {
-      "address": "witkiewicza 26/34 sosnowiec 41-209",
-      "phone": "698659598",
-      "totalNumber": 3,
-      "subtotalPrice": 41,
-      "totalPrice": 61,
-      "deliveryFee": 20,
-      "products": [
-        {
-          "productInfo": {
-            "id": "cake",
-            "amount": 2,
-            "price": 18,
-            "priceSingle": 9,
-            "params": {}
-          }
-        },
-        {
-          "productInfo": {
-            "id": "pizza",
-            "amount": 1,
-            "price": 23,
-            "priceSingle": 23,
-            "params": {
-              "sauce": {
-                "label": "Sauce",
-                "options": {
-                  "tomato": "Tomato"
-                }
-              },
-              "toppings": {
-                "label": "Toppings",
-                "options": {
-                  "olives": "Olives",
-                  "redPeppers": "Red peppers",
-                  "greenPeppers": "Green peppers",
-                  "mushrooms": "Mushrooms",
-                  "basil": "Fresh basil",
-                  "salami": "Salami"
-                }
-              },
-              "crust": {
-                "label": "pizza crust",
-                "options": {
-                  "standard": "standard"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "id": 6
-    },
-    {
-      "address": "dwdw",
-      "phone": "ddw",
+      "address": "Witkwiecza 23/23 sosnowiec 23-200 ",
+      "phone": "747474747",
       "totalNumber": 1,
       "subtotalPrice": 9,
       "totalPrice": 29,
@@ -329,7 +241,66 @@
           }
         }
       ],
-      "id": 7
+      "id": 2
+    },
+    {
+      "address": "Witkwiecza 23/23 sosnowiec 23-200 ",
+      "phone": "2323234256",
+      "totalNumber": 4,
+      "subtotalPrice": 36,
+      "totalPrice": 56,
+      "deliveryFee": 20,
+      "products": [
+        {
+          "productInfo": {
+            "id": "breakfast",
+            "amount": 2,
+            "price": 18,
+            "priceSingle": 9,
+            "params": {
+              "coffee": {
+                "label": "Coffee type",
+                "options": {
+                  "latte": "Latte"
+                }
+              }
+            }
+          }
+        },
+        {
+          "productInfo": {
+            "id": "breakfast",
+            "amount": 1,
+            "price": 9,
+            "priceSingle": 9,
+            "params": {
+              "coffee": {
+                "label": "Coffee type",
+                "options": {
+                  "latte": "Latte"
+                }
+              }
+            }
+          }
+        },
+        {
+          "productInfo": {
+            "id": "breakfast",
+            "amount": 1,
+            "price": 9,
+            "priceSingle": 9,
+            "params": {
+              "coffee": {
+                "label": "Coffee type",
+                "options": {
+                  "latte": "Latte"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "id": 3
     }
   ]
 }

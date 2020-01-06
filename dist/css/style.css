@@ -77,9 +77,9 @@ body {
 }
 
 .btn-secondary {
-  background: #ff6b6b;
+  background: #8e44ad;
   color: #fff;
-  border-color: #ff6b6b;
+  border-color: #8e44ad;
   border-radius: 4px;
   transition: all 0.3s;
   display: inline-block;
@@ -92,12 +92,12 @@ body {
 }
 
 .btn-secondary:hover {
-  background: #ff7a7a;
+  background: #9749b7;
 }
 
 .btn-secondary.disabled, .btn-secondary[disabled] {
-  background: #b5b5b5;
-  border-color: #b5b5b5;
+  background: #797979;
+  border-color: #797979;
   cursor: not-allowed;
 }
 
@@ -134,7 +134,7 @@ body {
 
 .btn-quantity--lt {
   background: #fff;
-  color: #ff6b6b;
+  color: #8e44ad;
   border-color: #fff;
   border-radius: 4px;
   transition: all 0.3s;
@@ -164,14 +164,36 @@ body {
 }
 
 /* Form elements */
+input {
+  opacity: 0.8;
+}
+
+input:focus {
+  border: 2px solid #8e44ad;
+  box-shadow: inset 0px 0px 2px 2px #8e44ad;
+  outline: none;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #333;
+}
+
+input::placeholder {
+  color: #333;
+}
+
 input, select {
-  border: 1px solid #333;
+  border: 2px solid #333;
   border-radius: 4px;
   padding: 12px;
 }
 
 input.error, select.error {
-  border-color: #ff6b6b;
+  border-color: #8e44ad;
 }
 
 .checkbox {
@@ -274,7 +296,7 @@ input.error, select.error {
   padding: 12px 18px;
   background: #fff;
   border-radius: 4px;
-  color: #ff6b6b;
+  color: #8e44ad;
   font-size: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   z-index: 9999;
@@ -305,7 +327,7 @@ input.error, select.error {
 }
 
 .cart__total-number {
-  background: #ff6b6b;
+  background: #8e44ad;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -420,11 +442,11 @@ input.error, select.error {
 }
 
 .cart__action-buttons a {
-  color: #ff6b6b;
+  color: #8e44ad;
 }
 
 .cart__action-buttons a:hover {
-  color: #ff7a7a;
+  color: #9749b7;
 }
 
 .cart__order-price {
@@ -491,7 +513,7 @@ input.error, select.error {
 
 .product__icon {
   position: absolute;
-  color: #ff6b6b;
+  color: #8e44ad;
   right: -60px;
   top: 12px;
   font-size: 18px;
