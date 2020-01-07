@@ -97,7 +97,7 @@ export class Cart {
     thisCart.dom.productList.appendChild(generatedDOM);
 
     thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
-    //console.log('thisCart.products', thisCart.products);
+    //console.log('thisCart.products:', thisCart.products);
 
     thisCart.update();
   }
@@ -112,7 +112,6 @@ export class Cart {
 
   update(){
     const thisCart = this;
-
     thisCart.totalNumber = 0;
     thisCart.subtotalPrice = 0;
 
