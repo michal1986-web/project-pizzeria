@@ -205,27 +205,7 @@
   "order": [
     {
       "address": "Witkwiecza 23/23 sosnowiec 23-200 ",
-      "phone": "696856985",
-      "totalNumber": 2,
-      "subtotalPrice": 18,
-      "totalPrice": 38,
-      "deliveryFee": 20,
-      "products": [
-        {
-          "productInfo": {
-            "id": "cake",
-            "amount": 2,
-            "price": 18,
-            "priceSingle": 9,
-            "params": {}
-          }
-        }
-      ],
-      "id": 1
-    },
-    {
-      "address": "Witkwiecza 23/23 sosnowiec 23-200 ",
-      "phone": "747474747",
+      "phone": "6858586586",
       "totalNumber": 1,
       "subtotalPrice": 9,
       "totalPrice": 29,
@@ -241,66 +221,88 @@
           }
         }
       ],
-      "id": 2
+      "id": 1
     },
     {
       "address": "Witkwiecza 23/23 sosnowiec 23-200 ",
-      "phone": "2323234256",
-      "totalNumber": 4,
-      "subtotalPrice": 36,
-      "totalPrice": 56,
+      "phone": "69683222",
+      "totalNumber": 2,
+      "subtotalPrice": 18,
+      "totalPrice": 38,
       "deliveryFee": 20,
       "products": [
         {
           "productInfo": {
-            "id": "breakfast",
+            "id": "cake",
             "amount": 2,
             "price": 18,
             "priceSingle": 9,
-            "params": {
-              "coffee": {
-                "label": "Coffee type",
-                "options": {
-                  "latte": "Latte"
-                }
-              }
-            }
-          }
-        },
-        {
-          "productInfo": {
-            "id": "breakfast",
-            "amount": 1,
-            "price": 9,
-            "priceSingle": 9,
-            "params": {
-              "coffee": {
-                "label": "Coffee type",
-                "options": {
-                  "latte": "Latte"
-                }
-              }
-            }
-          }
-        },
-        {
-          "productInfo": {
-            "id": "breakfast",
-            "amount": 1,
-            "price": 9,
-            "priceSingle": 9,
-            "params": {
-              "coffee": {
-                "label": "Coffee type",
-                "options": {
-                  "latte": "Latte"
-                }
-              }
-            }
+            "params": {}
           }
         }
       ],
-      "id": 3
+      "id": 2
     }
-  ]
+  ],
+  "event": [
+    {
+      "id": 1,
+      "date": "2019-01-01",
+      "hour": "12:30",
+      "table": 1,
+      "repeat": false,
+      "duration": 4,
+      "ppl": 3,
+      "starters": []
+    },
+    {
+      "id": 2,
+      "date": "2019-01-01",
+      "hour": "16:00",
+      "table": 3,
+      "repeat": "daily",
+      "duration": 2,
+      "ppl": 3,
+      "starters": [
+        "bread",
+        "lemonWater"
+      ]
+    },
+    {
+      "id": 3,
+      "date": "2019-01-01",
+      "hour": "12:00",
+      "table": 3,
+      "repeat": "daily",
+      "duration": 2,
+      "ppl": 3,
+      "starters": [
+        "bread",
+        "lemonWater"
+      ]
+    },
+    {
+      "id": 4,
+      "date": "2019-01-01",
+      "hour": "13:00",
+      "table": 2,
+      "repeat": "daily",
+      "duration": 4,
+      "ppl": 3,
+      "starters": []
+    },
+    {
+      "id": 5,
+      "date": "2019-01-01",
+      "hour": "18:00",
+      "table": 2,
+      "repeat": "daily",
+      "duration": 2,
+      "ppl": 3,
+      "starters": [
+        "lemonWater"
+      ]
+    }
+  ],
+  "booking": []
 }
