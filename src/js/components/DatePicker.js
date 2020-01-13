@@ -24,6 +24,11 @@ export class DatePicker extends BaseWidget{
       defaultDate: thisWidget.minDate,
       minDate: thisWidget.minDate,
       maxDate: thisWidget.maxDate,
+      disable: [
+        function (date) {
+          return (date.getDay() === true);
+        }
+      ],
       locale:{
         firstDayOfWeek: 1
       },
@@ -34,7 +39,7 @@ export class DatePicker extends BaseWidget{
   }
 
   parseValue(value){
-    return value;
+    return utils.dateToStr(value[0]);
   }
 
   isValid(){

@@ -30,6 +30,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "bower-npm-resolver": "^0.10.0",
+        "flatpickr": "^4.6.3",
         "json-server": "^0.15.1"
     },
     "devDependencies": {
