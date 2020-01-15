@@ -97,7 +97,7 @@ export class Booking {
     //console.log('thisBooking.booked:', thisBooking.booked);
   }
 
-  makeBooked(date, hour, duration, table){
+  makeBooked(date, hour, duration, starters, table){
     const thisBooking = this;
 
     if (typeof thisBooking.booked[date] == 'undefined') {
@@ -129,9 +129,9 @@ export class Booking {
           table.classList.add(classNames.booking.tableBooked);
           thisBooking.clickedElement = event.target;
           thisBooking.tableNumber = thisBooking.clickedElement.getAttribute(settings.booking.tableIdAttribute);
-          console.log('thisBooking.tableNumber ', thisBooking.tableNumber);
+          console.log('thisBooking.tableNumber: ', thisBooking.tableNumber);
           thisBooking.tableNumberArray.push(thisBooking.tableNumber);
-          console.log('thisBooking.tableNumberArray ', thisBooking.tableNumberArray);
+          console.log('thisBooking.tableNumberArray: ', thisBooking.tableNumberArray);
         }
       });
     }
@@ -152,9 +152,8 @@ export class Booking {
       starters: [],
       table: [],
     };
-    //console.log(payload);
 
-    /*for (let starter of thisBooking.dom.starters) {
+    for (let starter of thisBooking.dom.starters) {
       if (starter.checked == true) {
         payload.starters.push(starter.value);
       }
@@ -169,7 +168,7 @@ export class Booking {
         }
         payload.table.push(thisBooking.tableId);
       }
-    }*/
+    }
 
     const options = {
       method: 'POST',
@@ -186,9 +185,9 @@ export class Booking {
       })
       .then(function (parsedResponse) {
         console.log('parsedResponse: ', parsedResponse);
-        thisBooking.makeBooked(payload.datePicked, payload.hourPicked, payload.bookHourAmount, payload.table);
+        thisBooking.makeBooked(payload.datePicked, payload.hourPicked, payload.bookHourAmount, payload.starters, payload.table);
 
-        console.log(payload.datePicked);
+        //console.log(payload.datePicked);
         //console.log(payload.hourPicked);
         //console.log(payload.bookHourAmount);
         //console.log(payload.table);
@@ -260,7 +259,8 @@ export class Booking {
       thisBooking.updateDOM();
     });
 
-    thisBooking.dom.wrapper.addEventListener('click', function(){
+    thisBooking.dom.wrapper.addEventListener('submit', function(){
+      event.preventDefault();
       thisBooking.sendBooked();
     });
   }
