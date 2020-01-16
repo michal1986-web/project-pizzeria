@@ -12,6 +12,7 @@ export const select = {
     cart: '#cart',
     pages: '#pages',
     booking: '.booking-wrapper',
+    homePage: '.home-wrapper',
   },
   all: {
     menuProducts: '#product-list > .product',
@@ -66,6 +67,7 @@ export const select = {
     peopleAmount: '.people-amount',
     hoursAmount: '.hours-amount',
     tables: '.floor-plan .table',
+    starters: '[name="starter"]',
   },
   nav: {
     links: '.main-nav a',
@@ -90,6 +92,9 @@ export const classNames = {
     active: 'active',
   },
   pages: {
+    active: 'active',
+  },
+  home: {
     active: 'active',
   },
 };

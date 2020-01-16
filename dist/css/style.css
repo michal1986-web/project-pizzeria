@@ -859,4 +859,12 @@ input.error, select.error {
       justify-content: space-between;
   margin: 48px auto;
 }
+
+.home-wrapper {
+  margin: 42px auto;
+  padding: 72px 48px;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
 /*# sourceMappingURL=style.css.map */
