@@ -202,28 +202,7 @@
       }
     }
   ],
-  "order": [
-    {
-      "address": "qweqweq",
-      "phone": "423423432",
-      "totalNumber": 1,
-      "subtotalPrice": 9,
-      "totalPrice": 29,
-      "deliveryFee": 20,
-      "products": [
-        {
-          "productInfo": {
-            "id": "cake",
-            "amount": 1,
-            "price": 9,
-            "priceSingle": 9,
-            "params": {}
-          }
-        }
-      ],
-      "id": 1
-    }
-  ],
+  "order": [],
   "event": [
     {
       "id": 1,
@@ -278,7 +257,7 @@
   "booking": [
     {
       "id": 4,
-      "date": "2020-01-16",
+      "date": "2020-01-18",
       "hour": "22:00",
       "table": 3,
       "duration": 1,
@@ -288,74 +267,73 @@
       ]
     },
     {
-      "table": [
-        2,
-        3
-      ],
-      "datePicked": "2020-01-16",
-      "hourPicked": "22:30",
-      "bookPhone": "321321",
-      "bookAddress": "wada",
-      "bookHourAmount": 2,
-      "bookPeopleAmount": 2,
+      "table": [],
+      "datePicked": "2020-01-18",
+      "hourPicked": "12:00",
+      "bookPhone": "455",
+      "bookAddress": "esff",
       "starters": [],
+      "bookHourAmount": 1,
+      "bookPeopleAmount": 1,
       "id": 5
     },
     {
       "table": [
-        3
+        2
       ],
-      "datePicked": "2020-01-16",
-      "hourPicked": "15:00",
-      "bookPhone": "4234",
-      "bookAddress": "addw",
+      "datePicked": "2020-01-18",
+      "hourPicked": "17:30",
+      "bookPhone": "535",
+      "bookAddress": "fsefe",
+      "starters": [
+        "water"
+      ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
-      "starters": [],
       "id": 6
     },
     {
       "table": [
-        3
+        2
       ],
-      "datePicked": "2020-01-16",
-      "hourPicked": "15:30",
-      "bookPhone": "234234234",
-      "bookAddress": "awdawda",
+      "datePicked": "2020-01-23",
+      "hourPicked": "17:30",
+      "bookPhone": "535",
+      "bookAddress": "fsefe",
+      "starters": [
+        "water"
+      ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
-      "starters": [
-        "bread"
-      ],
       "id": 7
     },
     {
       "table": [
-        2
+        1
       ],
-      "datePicked": "2020-01-16",
-      "hourPicked": "14:30",
-      "bookPhone": "3423423",
-      "bookAddress": [],
-      "bookHourAmount": 2,
-      "bookPeopleAmount": 2,
+      "datePicked": "2020-01-23",
+      "hourPicked": "15:00",
+      "bookPhone": "21313",
+      "bookAddress": "dawwd",
       "starters": [
         "water"
       ],
+      "bookHourAmount": 2,
+      "bookPeopleAmount": 2,
       "id": 8
     },
     {
       "table": [
-        1,
         2
       ],
-      "datePicked": "2020-01-16",
-      "hourPicked": "12:00",
-      "bookPhone": "53454es",
-      "bookAddress": "fesfes",
+      "datePicked": [
+        "2020-01-22T23:00:00.000Z"
+      ],
+      "hourPicked": "19:30",
+      "bookPhone": "523",
+      "bookAddress": "efedfasewd",
       "starters": [
-        "water",
-        "bread"
+        "water"
       ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
@@ -363,27 +341,33 @@
     },
     {
       "table": [
-        2
+        1
       ],
-      "datePicked": "2020-01-16",
+      "datePicked": [
+        "2020-01-21T23:00:00.000Z"
+      ],
       "hourPicked": "14:30",
-      "bookPhone": "42423",
-      "bookAddress": "easdawdaw",
+      "bookPhone": "42",
+      "bookAddress": "ad",
       "starters": [
-        "bread"
+        "water"
       ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
       "id": 10
     },
     {
-      "table": [],
-      "datePicked": "2020-01-16",
-      "hourPicked": "16:30",
-      "bookPhone": "32132",
-      "bookAddress": "awddaw",
+      "table": [
+        1
+      ],
+      "datePicked": [
+        "2020-01-22T23:00:00.000Z"
+      ],
+      "hourPicked": "17:00",
+      "bookPhone": "3423432",
+      "bookAddress": "asdawdaw",
       "starters": [
-        "bread"
+        "water"
       ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
@@ -393,12 +377,12 @@
       "table": [
         3
       ],
-      "datePicked": "2020-01-16",
-      "hourPicked": "16:30",
-      "bookPhone": "32132",
-      "bookAddress": "awddaw",
+      "datePicked": "2020-01-21",
+      "hourPicked": "19:00",
+      "bookPhone": "3213213",
+      "bookAddress": "dadaw",
       "starters": [
-        "bread"
+        "water"
       ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
@@ -406,12 +390,12 @@
     },
     {
       "table": [],
-      "datePicked": "2020-01-16",
-      "hourPicked": "14:00",
-      "bookPhone": "3213aw",
-      "bookAddress": "dwadaw",
+      "datePicked": "2020-01-21",
+      "hourPicked": "17:00",
+      "bookPhone": "342342",
+      "bookAddress": "ewdad",
       "starters": [
-        "water"
+        "bread"
       ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
@@ -419,18 +403,59 @@
     },
     {
       "table": [
-        2
+        1
       ],
-      "datePicked": "2020-01-16",
-      "hourPicked": "14:00",
-      "bookPhone": "3213aw",
-      "bookAddress": "dwadaw",
+      "datePicked": "2020-01-23",
+      "hourPicked": "16:00",
+      "bookPhone": "535534",
+      "bookAddress": "efdesfs",
       "starters": [
         "water"
       ],
       "bookHourAmount": 2,
       "bookPeopleAmount": 2,
       "id": 14
+    },
+    {
+      "table": [],
+      "datePicked": "2020-01-31",
+      "hourPicked": "16:00",
+      "bookPhone": "535534",
+      "bookAddress": "efdesfs",
+      "starters": [
+        "water"
+      ],
+      "bookHourAmount": 3,
+      "bookPeopleAmount": 3,
+      "id": 15
+    },
+    {
+      "table": [],
+      "datePicked": "2020-01-18",
+      "hourPicked": "12:00",
+      "bookPhone": "332424",
+      "bookAddress": "fessf",
+      "starters": [
+        "bread"
+      ],
+      "bookHourAmount": 2,
+      "bookPeopleAmount": 2,
+      "id": 16
+    },
+    {
+      "table": [
+        3
+      ],
+      "datePicked": "2020-01-25",
+      "hourPicked": "17:30",
+      "bookPhone": "32442",
+      "bookAddress": "fesfes",
+      "starters": [
+        "water"
+      ],
+      "bookHourAmount": 2,
+      "bookPeopleAmount": 2,
+      "id": 17
     }
   ]
 }

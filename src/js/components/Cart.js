@@ -82,6 +82,7 @@ export class Cart {
       }).then(function(parsedResponse){
         console.log('parsedResponse', parsedResponse);
       });
+    return window.alert('Your order is ready. Thank you for visited. Enjoy your meal!');
   }
 
   add(menuProduct){

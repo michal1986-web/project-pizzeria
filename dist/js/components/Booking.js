@@ -190,6 +190,7 @@ export class Booking {
         //console.log(payload.bookHourAmount);
         //console.log(payload.table);
       });
+    return window.alert('Your reservation is correct');
   }
 
   updateDOM() {

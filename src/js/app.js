@@ -105,6 +105,62 @@ const app = {
     //console.log('thisApp.data:', JSON.stringify(thisApp.data));
   },
 
+  initCarousel() {
+    // eslint-disable-next-line no-unused-vars
+    const thisApp = this;
+    const review = [];
+
+    review[0] = {
+      title: 'Pizza is really delicious!',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt mi vel erat feugiat, vel porta nunc porta. Proin posuere dictum quam, a congue magna placerat ac.',
+      author: 'Brian D.',
+
+    };
+    review[1] = {
+      title: 'Great service :)',
+      content: 'Quisque eu eros ac nisl volutpat vehicula sit amet sit amet nibh. Nam in neque condimentum, interdum augue id, suscipit dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      author: 'Allan G.',
+    };
+    review[2] = {
+      title: 'I recommend to everyone...',
+      content: 'Sed consectetur mollis faucibus. Suspendisse et eleifend elit. Fusce varius hendrerit arcu, quis iaculis enim imperdiet quis. Pellentesque consectetur felis a cursus porttitor. Sed lobortis blandit tortor.',
+      author: 'Andrew B.', 
+    };
+    let i = 0;
+
+    const dots = document.querySelectorAll('.home__carousel--dots i');
+
+    function changeTitle() {
+
+      const title = document.querySelector('.home__carousel--title');
+      const content = document.querySelector('.home__carousel--content');
+      const author = document.querySelector('.home__carousel--author');
+
+      for (let dot of dots) {
+        if (dot.id == i + 1) { // +1 ??
+          // console.log(dot.id);
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+        title.innerHTML = review[i].title;
+        content.innerHTML = review[i].content;
+        author.innerHTML = review[i].author;
+      }
+
+      if (i < review.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+    }
+    changeTitle();
+
+    setInterval(() => {
+      changeTitle();
+    }, 3000);
+  },
+
   init: function(){
     const thisApp = this;
     //console.log('*** App starting ***');
@@ -116,6 +172,7 @@ const app = {
     thisApp.initData();
     thisApp.initCart();
     thisApp.initBooking();
+    thisApp.initCarousel();
   },
 };
 

@@ -35,7 +35,7 @@ export const select = {
     },
     datePicker: {
       wrapper: '.date-picker',
-      input: `input[name="date"]`,
+      input: 'input[name="date"]',
     },
     hourPicker: {
       wrapper: '.hour-picker',
@@ -70,7 +70,7 @@ export const select = {
     starters: '[name="starter"]',
   },
   nav: {
-    links: '.main-nav a',
+    links: '.main-nav a, .home__page--links a, .logo a',
   },
 };
 
@@ -92,9 +92,6 @@ export const classNames = {
     active: 'active',
   },
   pages: {
-    active: 'active',
-  },
-  home: {
     active: 'active',
   },
 };
