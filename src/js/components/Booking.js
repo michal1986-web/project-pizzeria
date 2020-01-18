@@ -220,7 +220,40 @@ export class Booking {
         table.classList.remove(classNames.booking.tableBooked);
       }
     }
+    thisBooking.sliderColor();
   }
+
+  sliderColor() {
+    const thisBooking = this;
+
+    const bookedHours = thisBooking.booked[thisBooking.date];
+    const sliderColors = [];
+
+    thisBooking.dom.rangeSlider = thisBooking.dom.wrapper.querySelector(select.widgets.hourPicker.slider);
+
+    const slider = thisBooking.dom.rangeSlider;
+
+    for (let bookedHour in bookedHours) {
+      const firstInterval = ((bookedHour - 12) * 100) / 12;
+      const secondInterval = (((bookedHour - 12) + .5) * 100) / 12;
+      //everyone
+      if (bookedHours[bookedHour].length <= 1) {
+        sliderColors.push('/*' + bookedHour + '*/#009432 ' + firstInterval + '%, #009432 ' + secondInterval + '%');
+      } 
+      //only one
+      else if (bookedHours[bookedHour].length === 2) {
+        sliderColors.push('/*' + bookedHour + '*/#FFC312 ' + firstInterval + '%, #FFC312 ' + secondInterval + '% ');
+      } 
+      //no booked
+      else if (bookedHours[bookedHour].length === 3) {
+        sliderColors.push('/*' + bookedHour + '*/#EA2027 ' + firstInterval + '%, #EA2027 ' + secondInterval + '%');
+      }
+    }
+    sliderColors.sort();
+    const greenOrangeRedString = sliderColors.join();
+    slider.style.background = 'linear-gradient(to right, ' + greenOrangeRedString + ')';
+  }
+
 
   render(element){
     const thisBooking = this;
